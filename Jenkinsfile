@@ -27,7 +27,7 @@ pipeline {
                 sh '''
                     echo 'Test stage'
                     ls
-                    test -f public/index.htmml
+                    test -f public/index.html
                     npm --version
                     npm test
                 '''
