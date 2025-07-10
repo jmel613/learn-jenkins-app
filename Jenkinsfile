@@ -26,6 +26,7 @@ pipeline {
             steps {
                 '''
                     echo 'Test stage'
+                    test -f public/index.htmml
                     docker --version
                     npm --version
                     npm ci
