@@ -9,7 +9,7 @@ pipeline {
                 }
             }
             steps {
-                '''
+                sh '''
                     docker --version
                     npm --version
                     npm ci
@@ -24,7 +24,7 @@ pipeline {
                 }
             }
             steps {
-                '''
+                sh '''
                     echo 'Test stage'
                     test -f public/index.htmml
                     docker --version
