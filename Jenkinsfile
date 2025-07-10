@@ -13,7 +13,7 @@ pipeline {
                     echo 'Building'
                     npm --version
                     npm ci
-                    npm build all
+                    npm run build
                 '''
             }
         }
@@ -28,8 +28,7 @@ pipeline {
                     echo 'Test stage'
                     test -f public/index.htmml
                     npm --version
-                    npm ci
-                    npm build all
+                    npm test
                 '''
             }
         }
